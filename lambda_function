@@ -35,7 +35,8 @@ class DocumentProcessor:
     processType = ''
 
     def main(self, bucketName, documentName):
-        self.roleArn = '<past iam arn here>'
+        self.roleArn = 'arn:aws:iam::644408420609:role/service-role/extractTableFromPdfThenRegisterJsonInS3Role'
+
         self.bucket = bucketName
         self.document = documentName
 
@@ -113,7 +114,7 @@ class DocumentProcessor:
         print('registering in s3 bucket...')
         outputInJsonText = str(response)
         pdfTextExtractionS3ObjectName = self.document.replace('.pdf', '')
-        pdfTextExtractionS3Bucket = 'textract-analysis-example'
+        pdfTextExtractionS3Bucket = self.bucket
 
         s3 = boto3.client('s3')
 
