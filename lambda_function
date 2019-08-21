@@ -35,7 +35,7 @@ class DocumentProcessor:
     processType = ''
 
     def main(self, bucketName, documentName):
-        self.roleArn = 'arn:aws:iam::644408420609:role/service-role/extractTableFromPdfThenRegisterJsonInS3Role'
+        self.roleArn = '<past iam arn here>'
 
         self.bucket = bucketName
         self.document = documentName
