@@ -207,7 +207,7 @@ class DocumentProcessor:
                                                                          MaxResults=maxResults,
                                                                          NextToken=paginationToken)
 
-            # blocks=response['Blocks']
+            # Put response on pages list
             pages.append(response)
             print('Document Detected.')
 
@@ -216,6 +216,8 @@ class DocumentProcessor:
             else:
                 finished = True
 
+        # convert pages as JSON pattern
+        pages = json.dumps(pages)
         return pages
 
 
