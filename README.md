@@ -19,7 +19,7 @@
 
 ## Meta
 
-Victor Jatobá – [@victorjatoba10](https://twitter.com/victorjatoba10) – victorjatoba10[at]gmail.com
+Victor Jatobá – [@vmjatoba](https://twitter.com/vmjatoba) – victorjatoba10[at]gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
